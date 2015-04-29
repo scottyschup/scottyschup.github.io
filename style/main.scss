@@ -6,18 +6,6 @@
 @include flip-cover("slappityslap", "Slappity Slap", #f6861f);
 @include flip-cover("ss-github", "GitHub", #333);
 
-/* @import url(http://weloveiconfonts.com/api/?family=brandico|openwebicons);
-
-brandico
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-}
-
-openwebicons
-[class*="openwebicons-"]:before {
-  font-family: 'OpenWeb Icons', sans-serif;
-} */
-
 $light: #eee;
 $medium: #777;
 $dark: #222;
@@ -40,7 +28,7 @@ body {
   background-color: rgba(0, 0, 0, .2)
 }
 
-body * {
+.body * {
   border-radius: 7px;
 }
 

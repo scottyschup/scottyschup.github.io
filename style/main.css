@@ -418,17 +418,6 @@
   .ss-github-section:hover .ss-github-cover, .ss-github-section:hover .ss-github-inner, .ss-github-section:hover .ss-github-outer {
     transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1); }
 
-/* @import url(http://weloveiconfonts.com/api/?family=brandico|openwebicons);
-
-brandico
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-}
-
-openwebicons
-[class*="openwebicons-"]:before {
-  font-family: 'OpenWeb Icons', sans-serif;
-} */
 .clearfix:after {
   clear: both;
   content: " ";
@@ -443,7 +432,7 @@ body {
   background: url("../imgs/clean-code.jpg");
   background-color: rgba(0, 0, 0, 0.2); }
 
-body * {
+.body * {
   border-radius: 7px; }
 
 .top {
