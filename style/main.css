@@ -138,13 +138,13 @@
   .pj-github-section:hover .pj-github-cover, .pj-github-section:hover .pj-github-inner, .pj-github-section:hover .pj-github-outer {
     transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1); }
 
-.meteorites-section, .meteorites-section * {
+.asteroids-section, .asteroids-section * {
   box-sizing: border-box; }
 
-.meteorites-section, .meteorites-section div {
+.asteroids-section, .asteroids-section div {
   transition-duration: .6s; }
 
-.meteorites-section {
+.asteroids-section {
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
@@ -155,16 +155,16 @@
   perspective: 300;
   box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1); }
 
-.meteorites-button {
+.asteroids-button {
   text-align: center;
   transition-timing-function: ease;
   opacity: 0; }
-  .meteorites-button a {
+  .asteroids-button a {
     text-decoration: none;
     font-weight: bold;
     color: #f6861f; }
 
-.meteorites-cover {
+.asteroids-cover {
   position: absolute;
   top: 0;
   right: 0;
@@ -178,43 +178,43 @@
   pointer-events: none;
   z-index: 100; }
 
-.meteorites-inner, .meteorites-outer {
+.asteroids-inner, .asteroids-outer {
   position: absolute;
   width: 100%;
   height: 100%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: .25em;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%); }
-  .meteorites-inner:after, .meteorites-outer:after {
-    content: "Aspiring Meteorites"; }
+  .asteroids-inner:after, .asteroids-outer:after {
+    content: "Stargate: Asteroid Assault"; }
 
-.meteorites-outer {
+.asteroids-outer {
   background-color: #f6861f;
   transform: translateZ(0.25em); }
 
-.meteorites-inner {
+.asteroids-inner {
   background-color: #f8a050; }
 
-.meteorites-section:hover {
+.asteroids-section:hover {
   background: #EBEFF2; }
-  .meteorites-section:hover .meteorites-button {
+  .asteroids-section:hover .asteroids-button {
     opacity: 1; }
-  .meteorites-section:hover .meteorites-cover {
+  .asteroids-section:hover .asteroids-cover {
     transform: rotateY(-120deg); }
-  .meteorites-section:hover .meteorites-inner {
+  .asteroids-section:hover .asteroids-inner {
     background-color: #f6861f; }
-  .meteorites-section:hover .meteorites-outer {
+  .asteroids-section:hover .asteroids-outer {
     background-color: #a85407; }
-  .meteorites-section:hover .meteorites-cover, .meteorites-section:hover .meteorites-inner, .meteorites-section:hover .meteorites-outer {
+  .asteroids-section:hover .asteroids-cover, .asteroids-section:hover .asteroids-inner, .asteroids-section:hover .asteroids-outer {
     transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1); }
 
-.am-github-section, .am-github-section * {
+.aa-github-section, .aa-github-section * {
   box-sizing: border-box; }
 
-.am-github-section, .am-github-section div {
+.aa-github-section, .aa-github-section div {
   transition-duration: .6s; }
 
-.am-github-section {
+.aa-github-section {
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
@@ -225,16 +225,16 @@
   perspective: 300;
   box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1); }
 
-.am-github-button {
+.aa-github-button {
   text-align: center;
   transition-timing-function: ease;
   opacity: 0; }
-  .am-github-button a {
+  .aa-github-button a {
     text-decoration: none;
     font-weight: bold;
     color: #333; }
 
-.am-github-cover {
+.aa-github-cover {
   position: absolute;
   top: 0;
   right: 0;
@@ -248,34 +248,34 @@
   pointer-events: none;
   z-index: 100; }
 
-.am-github-inner, .am-github-outer {
+.aa-github-inner, .aa-github-outer {
   position: absolute;
   width: 100%;
   height: 100%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: .25em;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%); }
-  .am-github-inner:after, .am-github-outer:after {
+  .aa-github-inner:after, .aa-github-outer:after {
     content: "GitHub"; }
 
-.am-github-outer {
+.aa-github-outer {
   background-color: #333;
   transform: translateZ(0.25em); }
 
-.am-github-inner {
+.aa-github-inner {
   background-color: #4d4d4d; }
 
-.am-github-section:hover {
+.aa-github-section:hover {
   background: #EBEFF2; }
-  .am-github-section:hover .am-github-button {
+  .aa-github-section:hover .aa-github-button {
     opacity: 1; }
-  .am-github-section:hover .am-github-cover {
+  .aa-github-section:hover .aa-github-cover {
     transform: rotateY(-120deg); }
-  .am-github-section:hover .am-github-inner {
+  .aa-github-section:hover .aa-github-inner {
     background-color: #333; }
-  .am-github-section:hover .am-github-outer {
+  .aa-github-section:hover .aa-github-outer {
     background-color: black; }
-  .am-github-section:hover .am-github-cover, .am-github-section:hover .am-github-inner, .am-github-section:hover .am-github-outer {
+  .aa-github-section:hover .aa-github-cover, .aa-github-section:hover .aa-github-inner, .aa-github-section:hover .aa-github-outer {
     transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1); }
 
 .slappityslap-section, .slappityslap-section * {
