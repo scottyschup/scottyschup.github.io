@@ -18,7 +18,8 @@
 .puddlejumper-button {
   text-align: center;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 5px; }
   .puddlejumper-button a {
     text-decoration: none;
     font-weight: bold;
@@ -88,7 +89,8 @@
 .pj-github-button {
   text-align: center;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 5px; }
   .pj-github-button a {
     text-decoration: none;
     font-weight: bold;
@@ -158,7 +160,8 @@
 .asteroids-button {
   text-align: center;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 5px; }
   .asteroids-button a {
     text-decoration: none;
     font-weight: bold;
@@ -228,7 +231,8 @@
 .aa-github-button {
   text-align: center;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 5px; }
   .aa-github-button a {
     text-decoration: none;
     font-weight: bold;
@@ -298,7 +302,8 @@
 .slappityslap-button {
   text-align: center;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 5px; }
   .slappityslap-button a {
     text-decoration: none;
     font-weight: bold;
@@ -368,7 +373,8 @@
 .ss-github-button {
   text-align: center;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 5px; }
   .ss-github-button a {
     text-decoration: none;
     font-weight: bold;
@@ -425,30 +431,59 @@
   visibility: hidden; }
 
 body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
   height: 100%;
-  background: url("../imgs/clean-code.jpg");
-  background-color: rgba(0, 0, 0, 0.2); }
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background: #333; }
+
+.background {
+  background-image: url("../imgs/clean-code.jpg");
+  bottom: 0;
+  height: 200%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -9999;
+  transition: transform .1s; }
+
+.body {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px; }
 
 .body * {
   border-radius: 7px; }
 
 .top {
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1000; }
+
+.top > header {
   background-color: #7aa;
   border-radius: 0;
-  color: #eee; }
+  color: #eee;
+  padding-bottom: 5px; }
+
+.top h1 {
+  left: 15px;
+  float: left;
+  font-size: 48px; }
 
 .nav {
   position: relative;
   float: right; }
 
 .nav-gradient {
-  min-height: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#78aaaa), to(transparent));
   border-radius: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#78aaaa), to(transparent)); }
+  min-height: 10px;
+  position: relative; }
 
 .nav > li {
   position: relative;
@@ -479,21 +514,30 @@ h3, h4 {
 h4 {
   font-size: 18px; }
 
+.hr1 {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+
+.hr2 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
 hgroup.title {
   float: left;
   margin: 15px 10px;
   width: 75%; }
 
-.contact {
-  margin-top: 15px; }
-
 .main {
-  width: 70%;
-  box-shadow: 0 0 10px #eee;
-  margin: 20px auto;
-  border: none;
-  background-color: #8eafd1;
-  font-family: 'Alegreya Sans', sans-serif; }
+  width: 67%;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 110px auto; }
 
 .profile {
   width: 134px;
@@ -501,11 +545,6 @@ hgroup.title {
   float: left;
   position: relative;
   margin: 15px; }
-
-.top h1 {
-  left: 15px;
-  float: left;
-  font-size: 48px; }
 
 .flip-covers {
   float: right; }
@@ -517,9 +556,14 @@ hgroup.title {
 
 .main > section {
   clear: both;
-  margin: 15px; }
+  border: none;
+  background-color: rgba(140, 175, 210, 0.85);
+  box-shadow: 0 0 15px rgba(140, 175, 210, 0.85);
+  margin: 40px auto;
+  padding: 15px;
+  width: 100%; }
 
-.main > section > * {
+.main > section > *:not(img, .contact) {
   width: 100%;
   padding-bottom: 10px; }
 

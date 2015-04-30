@@ -9,39 +9,46 @@
     href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Alegreya+Sans:400,700,900,400italic|Amaranth:700,400italic,400'
     rel='stylesheet'
     type='text/css'>
-  <link rel="stylesheet" href="style/normalize.css">
-  <link rel="stylesheet" href="style/flip_cover.scss">
-  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" type='text/css' href="style/normalize.css">
+  <link rel="stylesheet" type='text/css' href="style/flip_cover.scss">
+  <link rel="stylesheet" type='text/css' href="style/main.css">
   <title>Your next new hire!</title>
 </head>
 
 
 <body>
+  <div class=background>
+  </div>
+
   <div class=body>
-    <header class="clearfix top">
-      <h1><a href=#>S. Scott Schupbach</a></h1>
-      <ul class=nav>
-        <li><a href=#projects>Projects</a></li>
-        <li><a href=#resume>Printable Resume</a></li>
-      </ul>
-    </header>
-    <div class=nav-gradient></div>
+    <div class="top clearfix">
+      <header class=clearfix>
+        <h1><a href=#>S. Scott Schupbach</a></h1>
+        <ul class=nav>
+          <li><a href=#projects>Projects</a></li>
+          <li><a href=#resume>Printable Resume</a></li>
+        </ul>
+      </header>
+      <div class=nav-gradient>
+      </div>
+    </div>
+
     <section class=main>
-      <img src=imgs/headshot.jpg class=profile>
-      <hgroup class="left title">
-        <h2>Full-stack web developer</h2>
-        <h3>San Francisco, New York, Chicago</h3>
-        <section class="contact">
+      <section class="clearfix contact">
+        <img src=imgs/headshot.jpg class=profile>
+        <hgroup class="left title">
+          <h2>Full-stack web developer</h2>
+          <h3>San Francisco, New York, Chicago</h3>
           <h4>email</h4>
           <a href=mailto:ssschupbach@gmail.com>ssschupbach@gmail.com</a>
           <h4>phone</h4>
           <a href=tel:15126387024>(512) 638-7024</a>
-        </section>
-      </hgroup>
+        </hgroup>
+      </section>
 
       <section class="clearfix projects" id=projects>
         <h1>Projects</h1>
-
+        <hr class=hr1>
         <article class=project>
           <div class=flip-covers>
             <div class="flip-cover-puddlejumper"></div>
@@ -60,6 +67,7 @@
             <li>Feautures drop-down date selection and database-populated type-ahead.</li>
           </ul>
         </article>
+        <hr class=hr2>
 
         <article class=project>
           <div class=flip-covers>
@@ -79,6 +87,7 @@
             <li>.</li>
           </ul>
         </article>
+        <hr class=hr2>
 
         <article class=project>
           <div class=flip-covers>
@@ -101,6 +110,7 @@
 
       <section class="clearfix skills">
         <h1>Skills</h1>
+        <hr class="hr1">
         <ul class="clearfix skills">
           <li>Ruby</li>
           <li>Rails</li>
@@ -118,46 +128,79 @@
 
       <section class="clearfix experience">
         <h1>Work History</h1>
+        <hr class="hr1">
         <article>
           <header>
             <p class="title"><b>Owner</b></p>
             <p class="subtitle">Denali Adventure Tours <i>(Summers 2010-2014)</i></p>
           </header>
           <ul class="description">
-            <li>Owned and managed a seasonal business selling tours to tourists near Denali National Park.</li>
-            <li>Designed <a href=http://denaliadventure.com>static site</a> for conveying company offerings to potentail clients using PHP and MySQL.</li>
+            <li>Increased company profits by 20% in first year of ownership through targeted advertising, establishment of online presence, and digitalization of reservation system (previously done by hand with forms in triplicate!)</li>
+            <li>Designed <a href=http://denaliadventure.com>static site</a> for conveying company offerings to potentail clients using PHP and MySQL (before receiving any developer training)</li>
             <li>Created book-keeping companion site for creating, tracking, and generating reports from reservations.</li>
             <!-- add tooltip screenshots of backend interface -->
+            <li>Average annual profit during 5 years of ownership increased by 30% over previous 5 years, in large part through improved hiring and employee training</li>
+          </ul>
+        </article>
+        <hr class="hr2">
+
+        <article>
+          <header>
+            <p class="title"><b>Teaching Assistant in Linguistics</b></p>
+            <p class="subtitle">University of California, Santa Barbara <i>(September 2013-December 2014)</i></p>
+          </header>
+          <ul class="description">
+            <li>Led students in in-depth discussion and practical application of linguistic material</li>
+            <li>Received above average end-of-course evaluations from all classes</li>
+            <li>Met with struggling students one-on-one regularly to help them solidify their grasp of the material</li>
+          </ul>
+        </article>
+        <hr class="hr2">
+
+        <article>
+          <header>
+            <p class="title"><b>Graduate Assistant Teacher of EASL</b></p>
+            <p class="subtitle">University of Montana <i>(August 2011-May 2013)</i></p>
+          </header>
+          <ul class="description">
+            <li>Researched, designed, and implemented EASL (English as an Academic Second Language) courses for undergraduate students with sub-par English proficiency</li>
+            <li>Received excellent end-of-course evaluations from all classes</li>
+            <li>Aided students in attaining both linguistic proficiency and cultural familiarity</li>
           </ul>
         </article>
       </section>
 
       <section class="clearfix education">
         <h1>Education</h1>
+        <hr class="hr1">
+
         <article>
           <header>
             <p class="title"><b>Web Development</b></p>
             <p class="subtitle">App Academy <i>(Spring 2015)</i></p>
           </header>
           <ul class="description">
-            <li>Immersive software development course with focus on full-stack web development and agile methodologies.</li>
-            <li>Strong emphasis on code quality and design patterns.</li>
+            <li>Immersive software development course with focus on full-stack web development, DRY coding, test- and behavior-driven development, and agile methodologies.</li>
+            <li>Strong emphasis on code quality and design patterns, engrained  through pair-programming increasingly larger projects.</li>
             <li>Acceptance rate around 5%.</li>
           </ul>
         </article>
+        <hr class="hr2">
 
         <article>
           <header>
             <p class="title"><b>PhD Linguistics</b> (unfinished)</p>
             <p class="subtitle">
-              University of California Santa Barbara <i>(2013-2014)</i>
+              University of California, Santa Barbara <i>(2013-2014)</i>
             </p>
           </header>
           <ul class="description">
-            <li>Took courses in Computational and Corpus Linguistics.</li>
-            <li>Utilized Python (NLTK module) and R to conduct linguistic research and statistical analysis of results.</li>
+            <li>Explored issues of language complexity using Python's NLTK module to parse and analyze linguistic data and the matplotlib library to visualize the results</li>
+            <li>Analyzed linguistic data within an Information Theoretical approach using Python to perform entropy calculations (<a href=https://www.academia.edu/12162974/Quantifying_syntactic_complexity>link to working paper</a>)</li>
+            <li>Used R to investigate reserach questions on various linguistic corpora and provide statistical analyses of results</li>
           </ul>
         </article>
+        <hr class="hr2">
 
         <article>
           <header>
@@ -166,13 +209,12 @@
           </header>
           <ul class="description">
             <li>
-              <a href=https://www.academia.edu/3746314/The_Blackfoot_demonstrative_system_Function_form_and_meaning_MA_Thesis_>
-              MA Thesis: "The Blackfoot demonstrative system: function, form, and meaning".
-              </a>
+              MA Thesis: "The Blackfoot demonstrative system: function, form, and meaning" (<a href=https://www.academia.edu/3746314/The_Blackfoot_demonstrative_system_Function_form_and_meaning_MA_Thesis_>link to thesis</a>)
             </li>
             <li>Earned student research conference Award for Outstanding Graduate Student Performance.</li>
           </ul>
         </article>
+        <hr class="hr2">
 
         <article>
           <header>
@@ -190,43 +232,6 @@
     </section>
   </div>
 
-  <script>
-    flipCover({
-      css: "puddlejumper",
-      url: "http://puddlejumper.space",
-      text: "Visit PuddleJumper",
-      width: "250px"
-    });
-    flipCover({
-      css: "pj-github",
-      url: "https://github.com/scottyschup/finalproject",
-      text: "Source code",
-      width: "125px"
-    });
-    flipCover({
-      css: "asteroids",
-      url: "http://scottschupbach.com/asteroidassault",
-      text: "Play Stargate: Asteroid Assault",
-      width: "250px"
-    });
-    flipCover({
-      css: "aa-github",
-      url: "https://github.com/scottyschup/asteroidassault",
-      text: "Source code",
-      width: "125px"
-    });
-    flipCover({
-      css: "slappityslap",
-      url: "http://scottyschup.github.io/slappityslap/",
-      text: "Play Slappity Slap",
-      width: "250px"
-    });
-    flipCover({
-      css: "ss-github",
-      url: "https://github.com/scottyschup/slappityslap",
-      text: "Source code",
-      width: "125px"
-    });
-  </script>
+  <script src=js/main.js></script>
 </body>
 </html>
