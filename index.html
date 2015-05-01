@@ -12,7 +12,10 @@
   <link rel="stylesheet" type='text/css' href="style/normalize.css">
   <link rel="stylesheet" type='text/css' href="style/flip_cover.scss">
   <link rel="stylesheet" type='text/css' href="style/main.css">
-  <title>Your next new hire!</title>
+  <!-- <link rel="stylesheet" type="text/css" href="print.css" media="print"> -->
+
+
+  <title>Scott Schupbach - Web Developer</title>
 </head>
 
 
@@ -25,7 +28,6 @@
       <header class=clearfix>
         <h1><a href=#>S. Scott Schupbach</a></h1>
         <ul class=nav>
-          <li><a href=#projects>Projects</a></li>
           <li><a href=#resume>Printable Resume</a></li>
         </ul>
       </header>
@@ -33,205 +35,212 @@
       </div>
     </div>
 
-    <section class=main>
-      <section class="clearfix contact">
-        <img src=imgs/headshot.jpg class=profile>
-        <hgroup class="left title">
-          <h2>Full-stack web developer</h2>
-          <h3>San Francisco, New York, Chicago</h3>
-          <h4>email</h4>
-          <a href=mailto:ssschupbach@gmail.com>ssschupbach@gmail.com</a>
-          <h4>phone</h4>
-          <a href=tel:15126387024>(512) 638-7024</a>
-        </hgroup>
-      </section>
+    <section class="clearfix main">
+      <div class=sections>
+        <section class="clearfix contact">
+          <img src=imgs/headshot.jpg class=profile>
+          <hgroup class="clearfix left title">
+            <h2>Full-stack web developer</h2>
+            <h3>San Francisco, Chicago</h3>
+            <h4>email</h4>
+            <a class=slide-left href=mailto:ssschupbach@gmail.com>
+              ssschupbach@gmail.com
+            </a>
+            <h4>phone</h4>
+            <a class=slide-left href=tel:15126387024>(512) 638-7024</a>
+          </hgroup>
+        </section>
 
-      <section class="clearfix projects" id=projects>
-        <h1>Projects</h1>
-        <hr class=hr1>
-        <article class=project>
-          <div class=flip-covers>
-            <div class="flip-cover-puddlejumper"></div>
-            <div class="flip-cover-pj-github"></div>
-          </div>
-          <header class="project-header">
-            <p class=title><b>PuddleJumper </b><i>(Rails, Backbone)</i></p>
-            <p class=subtitle>
-              Search engine for galactic travel via
-              <a href=http://en.wikipedia.org/wiki/Stargate_(device)>Stargate</a>.
-            </p>
-          </header>
-          <ul>
-            <li>Mimics functionality and appearance of kayak.com.</li>
-            <li>Allows users to search and reserve trips for multiple people.</li>
-            <li>Feautures drop-down date selection and database-populated type-ahead.</li>
+        <section class="clearfix projects" id=projects>
+          <h1>Projects</h1>
+          <hr class=hr1>
+          <article class=project>
+            <div class=flip-covers>
+              <div class="flip-cover-puddlejumper"></div>
+              <div class="flip-cover-pj-github"></div>
+            </div>
+            <header class="project-header">
+              <p class=title><b>PuddleJumper </b><i>(Rails, Backbone)</i></p>
+              <p class=subtitle>
+                Search engine for galactic travel via
+                <a href=http://en.wikipedia.org/wiki/Stargate_(device)>Stargate</a>.
+              </p>
+            </header>
+            <ul>
+              <li>Mimics functionality and appearance of kayak.com.</li>
+              <li>Allows users to search and reserve trips for multiple people.</li>
+              <li>Feautures drop-down date selection and database-populated type-ahead.</li>
+            </ul>
+          </article>
+          <hr class=hr2>
+
+          <article class=project>
+            <div class=flip-covers>
+              <div class="flip-cover-asteroids"></div>
+              <div class="flip-cover-aa-github"></div>
+            </div>
+            <header class="project-header">
+              <p class=title><b>Stargate: Asteroid Assault </b><i>(JavaScript, HTML5)</i></p>
+              <p class=subtitle>
+                Asteroids-style game made with HTML5 Canvas, with a
+                <a href=http://en.wikipedia.org/wiki/Stargate target=_blank>Stargate</a> twist.
+              </p>
+            </header>
+            <ul>
+              <li>Done. Now I can talk about it.</li>
+              <li>Provided a catalyst for exploring rotating images in Canvas.</li>
+              <li>.</li>
+            </ul>
+          </article>
+          <hr class=hr2>
+
+          <article class=project>
+            <div class=flip-covers>
+              <div class="flip-cover-slappityslap"></div>
+              <div class="flip-cover-ss-github"></div>
+            </div>
+            <header class="project-header">
+              <p class=title><b>Slappity Slap </b><i>(Vanilla JavaScript)</i></p>
+              <p class=subtitle>
+                A whack-a-mole style game for getting out your aggression.
+              </p>
+            </header>
+            <ul>
+              <li>Mimics functionality and appearance of kayak.com.</li>
+              <li>Allows users to search and reserve trips for multiple people.</li>
+              <li>Does some other cool things.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="clearfix skills">
+          <h1>Skills</h1>
+          <hr class="hr1">
+          <ul class="clearfix skills">
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Backbone</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>git</li>
           </ul>
-        </article>
-        <hr class=hr2>
+        </section>
 
-        <article class=project>
-          <div class=flip-covers>
-            <div class="flip-cover-asteroids"></div>
-            <div class="flip-cover-aa-github"></div>
-          </div>
-          <header class="project-header">
-            <p class=title><b>Stargate: Asteroid Assault </b><i>(JavaScript, HTML5)</i></p>
-            <p class=subtitle>
-              Asteroids-style game made with HTML5 Canvas, with a
-              <a href=http://en.wikipedia.org/wiki/Stargate target=_blank>Stargate</a> twist.
-            </p>
-          </header>
-          <ul>
-            <li>Done. Now I can talk about it.</li>
-            <li>Provided a catalyst for exploring rotating images in Canvas.</li>
-            <li>.</li>
-          </ul>
-        </article>
-        <hr class=hr2>
+        <section class="clearfix experience">
+          <h1>Work History</h1>
+          <hr class="hr1">
+          <article>
+            <header>
+              <p class="title"><b>Owner</b></p>
+              <p class="subtitle">Denali Adventure Tours <i>(Summers 2010-2014)</i></p>
+            </header>
+            <ul class="description">
+              <li>Increased company profits by 20% in first year of ownership through targeted advertising, establishment of online presence, and digitalization of reservation system (previously done by hand with forms in triplicate!)</li>
+              <li>Designed <a href=http://denaliadventure.com>static site</a> for conveying company offerings to potentail clients using PHP and MySQL (before receiving any developer training)</li>
+              <li>Created book-keeping companion site for creating, tracking, and generating reports from reservations.</li>
+              <!-- add tooltip screenshots of backend interface -->
+              <li>Average annual profit during 5 years of ownership increased by 30% over previous 5 years, in large part through improved hiring and employee training</li>
+            </ul>
+          </article>
+          <hr class="hr2">
 
-        <article class=project>
-          <div class=flip-covers>
-            <div class="flip-cover-slappityslap"></div>
-            <div class="flip-cover-ss-github"></div>
-          </div>
-          <header class="project-header">
-            <p class=title><b>Slappity Slap </b><i>(Vanilla JavaScript)</i></p>
-            <p class=subtitle>
-              A whack-a-mole style game for getting out your aggression.
-            </p>
-          </header>
-          <ul>
-            <li>Mimics functionality and appearance of kayak.com.</li>
-            <li>Allows users to search and reserve trips for multiple people.</li>
-            <li>Does some other cool things.</li>
-          </ul>
-        </article>
-      </section>
+          <article>
+            <header>
+              <p class="title"><b>Teaching Assistant in Linguistics</b></p>
+              <p class="subtitle">University of California, Santa Barbara <i>(September 2013-December 2014)</i></p>
+            </header>
+            <ul class="description">
+              <li>Led students in in-depth discussion and practical application of linguistic material</li>
+              <li>Received above average end-of-course evaluations from all classes</li>
+              <li>Met with struggling students one-on-one regularly to help them solidify their grasp of the material</li>
+            </ul>
+          </article>
+          <hr class="hr2">
 
-      <section class="clearfix skills">
-        <h1>Skills</h1>
-        <hr class="hr1">
-        <ul class="clearfix skills">
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>Javascript</li>
-          <li>jQuery</li>
-          <li>Backbone</li>
-          <li>Python</li>
-          <li>R</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SQL</li>
-          <li>git</li>
-        </ul>
-      </section>
+          <article>
+            <header>
+              <p class="title"><b>Graduate Assistant Teacher of EASL</b></p>
+              <p class="subtitle">University of Montana <i>(August 2011-May 2013)</i></p>
+            </header>
+            <ul class="description">
+              <li>Researched, designed, and implemented EASL (English as an Academic Second Language) courses for undergraduate students with sub-par English proficiency</li>
+              <li>Received excellent end-of-course evaluations from all classes</li>
+              <li>Aided students in attaining both linguistic proficiency and cultural familiarity</li>
+            </ul>
+          </article>
+        </section>
 
-      <section class="clearfix experience">
-        <h1>Work History</h1>
-        <hr class="hr1">
-        <article>
-          <header>
-            <p class="title"><b>Owner</b></p>
-            <p class="subtitle">Denali Adventure Tours <i>(Summers 2010-2014)</i></p>
-          </header>
-          <ul class="description">
-            <li>Increased company profits by 20% in first year of ownership through targeted advertising, establishment of online presence, and digitalization of reservation system (previously done by hand with forms in triplicate!)</li>
-            <li>Designed <a href=http://denaliadventure.com>static site</a> for conveying company offerings to potentail clients using PHP and MySQL (before receiving any developer training)</li>
-            <li>Created book-keeping companion site for creating, tracking, and generating reports from reservations.</li>
-            <!-- add tooltip screenshots of backend interface -->
-            <li>Average annual profit during 5 years of ownership increased by 30% over previous 5 years, in large part through improved hiring and employee training</li>
-          </ul>
-        </article>
-        <hr class="hr2">
+        <section class="clearfix education">
+          <h1>Education</h1>
+          <hr class="hr1">
 
-        <article>
-          <header>
-            <p class="title"><b>Teaching Assistant in Linguistics</b></p>
-            <p class="subtitle">University of California, Santa Barbara <i>(September 2013-December 2014)</i></p>
-          </header>
-          <ul class="description">
-            <li>Led students in in-depth discussion and practical application of linguistic material</li>
-            <li>Received above average end-of-course evaluations from all classes</li>
-            <li>Met with struggling students one-on-one regularly to help them solidify their grasp of the material</li>
-          </ul>
-        </article>
-        <hr class="hr2">
+          <article>
+            <header>
+              <p class="title"><b>Web Development</b></p>
+              <p class="subtitle">App Academy <i>(Spring 2015)</i></p>
+            </header>
+            <ul class="description">
+              <li>Immersive software development course with focus on full-stack web development, DRY coding, test- and behavior-driven development, and agile methodologies.</li>
+              <li>Strong emphasis on code quality and design patterns, engrained  through pair-programming increasingly larger projects.</li>
+              <li>Acceptance rate around 5%.</li>
+            </ul>
+          </article>
+          <hr class="hr2">
 
-        <article>
-          <header>
-            <p class="title"><b>Graduate Assistant Teacher of EASL</b></p>
-            <p class="subtitle">University of Montana <i>(August 2011-May 2013)</i></p>
-          </header>
-          <ul class="description">
-            <li>Researched, designed, and implemented EASL (English as an Academic Second Language) courses for undergraduate students with sub-par English proficiency</li>
-            <li>Received excellent end-of-course evaluations from all classes</li>
-            <li>Aided students in attaining both linguistic proficiency and cultural familiarity</li>
-          </ul>
-        </article>
-      </section>
+          <article>
+            <header>
+              <p class="title"><b>PhD Linguistics</b> (unfinished)</p>
+              <p class="subtitle">
+                University of California, Santa Barbara <i>(2013-2014)</i>
+              </p>
+            </header>
+            <ul class="description">
+              <li>Investigated issues related to language complexity using Python's NLTK module to parse and analyze linguistic data and the matplotlib library to visualize the results</li>
+              <li>Analyzed linguistic data within an Information Theoretical framework using Python to perform entropy calculations (<a href=https://www.academia.edu/12162974/Quantifying_syntactic_complexity>link to working paper</a>)</li>
+              <li>Used R to explore corpus linguistic approaches on a variety of topics and provide statistical analyses of results</li>
+            </ul>
+          </article>
+          <hr class="hr2">
 
-      <section class="clearfix education">
-        <h1>Education</h1>
-        <hr class="hr1">
+          <article>
+            <header>
+              <p class="title"><b>MA Linguistics</b> (GPA 4.0)</p>
+              <p class="subtitle">University of Montana <i>(2011-2013)</i></p>
+            </header>
+            <ul class="description">
+              <li>
+                MA Thesis: "The Blackfoot demonstrative system: function, form, and meaning" (<a href=https://www.academia.edu/3746314/The_Blackfoot_demonstrative_system_Function_form_and_meaning_MA_Thesis_>link to thesis</a>)
+              </li>
+              <li>Earned student research conference Award for Outstanding Graduate Student Performance.</li>
+            </ul>
+          </article>
+          <hr class="hr2">
 
-        <article>
-          <header>
-            <p class="title"><b>Web Development</b></p>
-            <p class="subtitle">App Academy <i>(Spring 2015)</i></p>
-          </header>
-          <ul class="description">
-            <li>Immersive software development course with focus on full-stack web development, DRY coding, test- and behavior-driven development, and agile methodologies.</li>
-            <li>Strong emphasis on code quality and design patterns, engrained  through pair-programming increasingly larger projects.</li>
-            <li>Acceptance rate around 5%.</li>
-          </ul>
-        </article>
-        <hr class="hr2">
-
-        <article>
-          <header>
-            <p class="title"><b>PhD Linguistics</b> (unfinished)</p>
-            <p class="subtitle">
-              University of California, Santa Barbara <i>(2013-2014)</i>
-            </p>
-          </header>
-          <ul class="description">
-            <li>Explored issues of language complexity using Python's NLTK module to parse and analyze linguistic data and the matplotlib library to visualize the results</li>
-            <li>Analyzed linguistic data within an Information Theoretical approach using Python to perform entropy calculations (<a href=https://www.academia.edu/12162974/Quantifying_syntactic_complexity>link to working paper</a>)</li>
-            <li>Used R to investigate reserach questions on various linguistic corpora and provide statistical analyses of results</li>
-          </ul>
-        </article>
-        <hr class="hr2">
-
-        <article>
-          <header>
-            <p class="title"><b>MA Linguistics</b> (GPA 4.0)</p>
-            <p class="subtitle">University of Montana <i>(2011-2013)</i></p>
-          </header>
-          <ul class="description">
-            <li>
-              MA Thesis: "The Blackfoot demonstrative system: function, form, and meaning" (<a href=https://www.academia.edu/3746314/The_Blackfoot_demonstrative_system_Function_form_and_meaning_MA_Thesis_>link to thesis</a>)
-            </li>
-            <li>Earned student research conference Award for Outstanding Graduate Student Performance.</li>
-          </ul>
-        </article>
-        <hr class="hr2">
-
-        <article>
-          <header>
-            <p class="title"><b>BA Classics</b> (GPA 3.97)</p>
-            <p class="subtitle">Grand Valley State University <i>(2008-2010)</i></p>
-          </header>
-          <ul class="description">
-            <li>Received The Department Award in 2010 (highest departmental award given to one student each year).</li>
-            <li>Awarded The Sophia Prize for Accomplishment in Classical Languages in 2009.</li>
-            <li>Earned award for Distinction in First-year Latin in 2008 (out of approx. 50 students)</li>
-          </ul>
-        </article>
-      </section>
-
+          <article>
+            <header>
+              <p class="title"><b>BA Classics</b> (GPA 3.97)</p>
+              <p class="subtitle">Grand Valley State University <i>(2008-2010)</i></p>
+            </header>
+            <ul class="description">
+              <li>Received The Department Award in 2010 (highest departmental award given to one student each year).</li>
+              <li>Awarded The Sophia Prize for Accomplishment in Classical Languages in 2009.</li>
+              <li>Earned award for Distinction in First-year Latin in 2008 (out of approx. 50 students)</li>
+            </ul>
+          </article>
+        </section>
+      </div>
     </section>
   </div>
 
   <script src=js/main.js></script>
+  <script type=text/javascript>
+    SSdotCom.animatePage();
+  </script>
+
 </body>
 </html>

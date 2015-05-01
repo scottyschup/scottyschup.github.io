@@ -452,6 +452,8 @@ body {
 .body {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.2);
   padding-bottom: 20px; }
 
@@ -530,12 +532,17 @@ h4 {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
 
 hgroup.title {
+  border-radius: 5px;
   float: left;
   margin: 15px 10px;
-  width: 75%; }
+  padding-left: 10px;
+  position: relative;
+  width: 400px;
+  z-index: 999;
+  transition: background-color .3s; }
 
 .main {
-  width: 67%;
+  width: 60%;
   font-family: 'Alegreya Sans', sans-serif;
   margin: 110px auto; }
 
@@ -554,14 +561,18 @@ hgroup.title {
   clear: right;
   margin: 10px; }
 
-.main > section {
+.sections {
+  width: 700px;
+  transition: top .1s, left .1s; }
+
+.sections > section {
   clear: both;
   border: none;
   background-color: rgba(140, 175, 210, 0.85);
   box-shadow: 0 0 15px rgba(140, 175, 210, 0.85);
   margin: 40px auto;
   padding: 15px;
-  width: 100%; }
+  width: 670px; }
 
 .main > section > *:not(img, .contact) {
   width: 100%;
