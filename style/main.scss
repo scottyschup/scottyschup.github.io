@@ -119,8 +119,6 @@ h1, h2, h3, h4 {
 
 h3, h4 {
   color: $dark;
-  font-weight: 700;
-  margin: 0;
 }
 
 h4 {
@@ -197,9 +195,6 @@ hgroup.title {
 .main > section > *:not(img, .contact) {
   width: 100%;
   padding-bottom: 10px;
-}
-
-section > article > * {
 }
 
 .title, .subtitle {
