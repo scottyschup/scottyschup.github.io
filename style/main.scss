@@ -1,16 +1,12 @@
-@import "flip_cover.scss";
-@include flip-cover("puddlejumper", "PuddleJumper", #f6861f);
-@include flip-cover("pj-github", "GitHub", #333);
-@include flip-cover("asteroids", "Stargate: Asteroid Assault", #f6861f);
-@include flip-cover("aa-github", "GitHub", #333);
-@include flip-cover("slappityslap", "Slappity Slap", #f6861f);
-@include flip-cover("ss-github", "GitHub", #333);
-
 $light: #eee;
 $medium: #777;
 $dark: #222;
 $greenish: #7aa;
 $bluish: rgba(140, 175, 210, 0.85);
+
+.print-only {
+  display: none;
+}
 
 .clearfix:after {
   clear: both;
@@ -20,83 +16,60 @@ $bluish: rgba(140, 175, 210, 0.85);
 }
 
 body {
+  background: #333;
   height: 100%;
   margin: 0;
   padding: 0;
   position: absolute;
   width: 100%;
-  background: #333;
 }
 
 .background {
   background-image: url('../imgs/clean-code.jpg');
   bottom: 0;
-  height: 200%;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: -9999;
   transition: transform .1s;
+  z-index: -9999;
 }
 
 .body {
-  position: absolute;
-  top: 0;
+  background-color: rgba(75, 75, 75, .7);
   left: 0;
+  padding-bottom: 0px;
+  position: absolute;
   right: 0;
-  background-color: rgba(255, 255, 255, .2);
-  padding-bottom: 20px;
+  top: 0;
 }
 
 .body * {
   border-radius: 7px;
 }
 
-.top {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+.main {
+  width: 50%;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 100px auto;
 }
 
-.top > header {
+.top {
   background-color: $greenish;
   border-radius: 0;
   color: $light;
-  padding-bottom: 5px;
+  padding: 0 20px 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
 }
 
 .top h1 {
-  left: 15px;
+  left: 5px;
   float: left;
   font-size: 48px;
-}
-
-.nav {
-  position: relative;
-  float: right;
-}
-
-.nav-gradient {
-  background-image:
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(120, 170, 170, 1)),
-      to(rgba(0, 0, 0, 0))
-    );
-  border-radius: 0;
-  min-height: 10px;
-  position: relative;
-}
-
-.nav > li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 7px 20px 0 10px;
 }
 
 a {
@@ -123,6 +96,41 @@ h3, h4 {
 
 h4 {
   font-size: 18px;
+}
+
+p {
+  margin: 0;
+}
+
+.links {
+  list-style-type: none;
+  margin: 10px 15px;
+}
+
+.links img, .title img {
+  height: 40px;
+  margin: 0 0 0 7px;
+  transition: height .2s;
+}
+
+.title img {
+  float: right;
+}
+
+.links img:hover {
+  height: 50px;
+}
+
+.inline {
+  display: block;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 .hr1 {
@@ -153,32 +161,15 @@ hgroup.title {
   transition: background-color .3s;
 }
 
-.main {
-  width: 60%;
-  font-family: 'Alegreya Sans', sans-serif;
-  margin: 110px auto;
-}
-
 .profile {
-  width: 134px;
-  height: 200px;
   float: left;
+  height: 150px;
+  margin: 5px;
   position: relative;
-  margin: 15px;
-}
-
-.flip-covers {
-  float: right;
-}
-
-.flip-covers > div {
-  float: right;
-  clear: right;
-  margin: 10px;
 }
 
 .sections {
-  width: 700px;
+  width: 100%;
   transition: top .1s, left .1s;
 }
 
@@ -186,10 +177,10 @@ hgroup.title {
   clear: both;
   border: none;
   background-color: $bluish;
-  box-shadow: 0 0 15px $bluish;
+  /* box-shadow: 0 0 15px $bluish; */
   margin: 40px auto;
   padding: 15px;
-  width: 670px;
+  width: 100%;
 }
 
 .main > section > *:not(img, .contact) {

@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <script src=js/vendor/jquery-2.1.3.min.js type="text/javascript"></script>
-  <script src=js/vendor/flip_cover.js type="text/javascript"></script>
   <script src=js/main.js type="text/javascript"></script>
   <link
     href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Alegreya+Sans:400,700,900,400italic|Amaranth:700,400italic,400'
     rel='stylesheet'
     type='text/css'>
   <link rel="stylesheet" type='text/css' href="style/normalize.css">
-  <link rel="stylesheet" type='text/css' href="style/flip_cover.scss">
   <link rel="stylesheet" type='text/css' href="style/main.css">
   <!-- <link rel="stylesheet" type="text/css" href="print.css" media="print"> -->
 
@@ -24,16 +22,31 @@
   </div>
 
   <div class=body>
-    <div class="top clearfix">
-      <header class=clearfix>
-        <h1><a href=#>S. Scott Schupbach</a></h1>
-        <ul class=nav>
-          <li><a href=#resume>Printable Resume</a></li>
-        </ul>
-      </header>
-      <div class=nav-gradient>
-      </div>
-    </div>
+    <header class="top clearfix">
+      <h1><a href=#>Scott Schupbach</a></h1>
+      <ul class="inline right links">
+        <li class=left title="Email">
+          <a href=mailto:ssschupbach@gmail.com>
+            <img src="imgs/icons/email.png">
+          </a>
+        </li>
+        <li class=left title="LinkedIn">
+          <a href=https://www.linkedin.com/pub/s-scott-schupbach/21/673/85a target=_blank>
+            <img src="imgs/icons/linkedin.jpeg">
+          </a>
+        </li>
+        <li class=left title="Twitter">
+          <a href=https://www.twitter.com/scottyschup target=_blank>
+            <img src="imgs/icons/twitter.png">
+          </a>
+        </li>
+        <li class=left title="Academia.edu">
+          <a href=https://independent.academia.edu/SScottSchupbach target=_blank>
+            <img src="imgs/icons/academia.png">
+          </a>
+        </li>
+      </ul>
+    </header>
 
     <section class="clearfix main">
       <div class=sections>
@@ -42,12 +55,16 @@
           <hgroup class="clearfix left title">
             <h2>Full-stack web developer</h2>
             <h3>San Francisco, Chicago</h3>
-            <h4>email</h4>
-            <a class=slide-left href=mailto:ssschupbach@gmail.com>
-              ssschupbach@gmail.com
-            </a>
-            <h4>phone</h4>
-            <a class=slide-left href=tel:15126387024>(512) 638-7024</a>
+            <p>email:
+              <a class=slide-left href=mailto:ssschupbach@gmail.com>
+                ssschupbach@gmail.com
+              </a>
+            </p>
+            <p>phone:
+              <a class=slide-left href=tel:15126387024>
+                (512) 638-7024
+              </a>
+            </p>
           </hgroup>
         </section>
 
@@ -55,52 +72,92 @@
           <h1>Projects</h1>
           <hr class=hr1>
           <article class=project>
-            <div class=flip-covers>
-              <div class="flip-cover-puddlejumper"></div>
-              <div class="flip-cover-pj-github"></div>
-            </div>
             <header class="project-header">
-              <p class=title><b>PuddleJumper </b><i>(Rails, Backbone)</i></p>
+              <p class=title>
+                <b>
+                  <a href=http://puddlejumper.space target=_blank>
+                    PuddleJumper
+                  </a>
+                  <a href=https://github.com/scottyschup/finalproject target=_blank>
+                    <img src=imgs/icons/git2.png>
+                  </a>
+                  <a href=http://puddlejumper.space target=_blank>
+                    <img src=imgs/icons/puddlejumper.png>
+                  </a>
+                </b>
+                <i>Rails, Backbone
+                  <span class=print-only>
+                    (http://puddlejumper.space)
+                  </span>
+                </i>
+              </p>
               <p class=subtitle>
-                Search engine for galactic travel via
+                A kayak.com clone for galactic travel via
                 <a href=http://en.wikipedia.org/wiki/Stargate_(device)>Stargate</a>.
               </p>
             </header>
             <ul>
-              <li>Mimics functionality and appearance of kayak.com.</li>
-              <li>Allows users to search and reserve trips for multiple people.</li>
-              <li>Feautures drop-down date selection and database-populated type-ahead.</li>
+              <li>Wrote backend search service to parse JSON-formatted search parameters and perform database queries</li>
+              <li>Utilized local storage to store previous search parameters for later reuse</li>
+              <li>Used rails' "accepts-nested-attributes-for" method to find or create multiple travelers with a single AJAX request</li>
+              <li>Implemented database-populated type-ahead for departure and origin inputs</li>
             </ul>
           </article>
           <hr class=hr2>
 
           <article class=project>
-            <div class=flip-covers>
-              <div class="flip-cover-asteroids"></div>
-              <div class="flip-cover-aa-github"></div>
-            </div>
             <header class="project-header">
-              <p class=title><b>Stargate: Asteroid Assault </b><i>(JavaScript, HTML5)</i></p>
+              <p class=title>
+                <b>
+                  <a href=http://scottschupbach.com/asteroidassault target=_blank>
+                    Stargate: Asteroid Assault
+                  </a>
+                  <a href=https://github.com/scottyschup/asteroidassault target=_blank>
+                    <img src=imgs/icons/git2.png>
+                  </a>
+                  <a href=http://scottschupbach.com/asteroidassault target=_blank>
+                    <img src=imgs/icons/asteroid.gif>
+                  </a>
+                </b>
+                <i>JavaScript, HTML5
+                  <span class="print-only">
+                    (scottschupbach.com/asteroidassault)
+                  </span>
+                </i>
+              </p>
               <p class=subtitle>
                 Asteroids-style game made with HTML5 Canvas, with a
                 <a href=http://en.wikipedia.org/wiki/Stargate target=_blank>Stargate</a> twist.
               </p>
             </header>
             <ul>
-              <li>Done. Now I can talk about it.</li>
-              <li>Provided a catalyst for exploring rotating images in Canvas.</li>
-              <li>.</li>
+              <li>Feautures variable difficulty levels and game durations</li>
+              <li>Provided a catalyst for exploring more complex aspects of HTML5 Canvas, specifically image rotation</li>
+              <li>Wrote key handler to allow multiple simultaneous key events</li>
             </ul>
           </article>
           <hr class=hr2>
 
           <article class=project>
-            <div class=flip-covers>
-              <div class="flip-cover-slappityslap"></div>
-              <div class="flip-cover-ss-github"></div>
-            </div>
             <header class="project-header">
-              <p class=title><b>Slappity Slap </b><i>(Vanilla JavaScript)</i></p>
+              <p class=title>
+                <b>
+                  <a href=http://scottschupbach.com/slappityslap target=_blank>
+                    Slappity Slap
+                  </a>
+                  <a href=https://github.com/scottyschup/slappityslap target=_blank>
+                    <img src=imgs/icons/git2.png>
+                  </a>
+                  <a href=https://scottschupbach.com/slappityslap target=_blank>
+                    <img src=imgs/icons/slap.gif>
+                  </a>
+                </b>
+                <i>Vanilla JavaScript
+                  <span class=print-only>
+                    (scottschupbach.com/slappityslap)
+                  </span>
+                </i>
+              </p>
               <p class=subtitle>
                 A whack-a-mole style game for getting out your aggression.
               </p>
@@ -140,11 +197,9 @@
               <p class="subtitle">Denali Adventure Tours <i>(Summers 2010-2014)</i></p>
             </header>
             <ul class="description">
-              <li>Increased company profits by 20% in first year of ownership through targeted advertising, establishment of online presence, and digitalization of reservation system (previously done by hand with forms in triplicate!)</li>
-              <li>Designed <a href=http://denaliadventure.com>static site</a> for conveying company offerings to potentail clients using PHP and MySQL (before receiving any developer training)</li>
-              <li>Created book-keeping companion site for creating, tracking, and generating reports from reservations.</li>
+              <li>Increased company profits by 20% in first year of ownership through digitalization of reservation system, establishment of online presence, and targeted advertising</li>
+              <li>Taught myself PHP and MYSQL to design a <a href=http://denaliadventure.com target=_blank>static site</a> for conveying company offerings to potential clients and a secure bookkeeping companion site for creating, tracking, and generating reports from reservations</li>
               <!-- add tooltip screenshots of backend interface -->
-              <li>Average annual profit during 5 years of ownership increased by 30% over previous 5 years, in large part through improved hiring and employee training</li>
             </ul>
           </article>
           <hr class="hr2">
@@ -155,9 +210,9 @@
               <p class="subtitle">University of California, Santa Barbara <i>(September 2013-December 2014)</i></p>
             </header>
             <ul class="description">
-              <li>Led students in in-depth discussion and practical application of linguistic material</li>
-              <li>Received above average end-of-course evaluations from all classes</li>
-              <li>Met with struggling students one-on-one regularly to help them solidify their grasp of the material</li>
+              <li>Led 30 to 60 students each quarter in in-depth discussion and practical application of linguistic material</li>
+              <li>Received positive end-of-course evaluations from all classes</li>
+              <li>Met with struggling students one-on-one regularly to help them solidify their grasp of the material, often outside of regularly scheduled office hours</li>
             </ul>
           </article>
           <hr class="hr2">
@@ -168,7 +223,7 @@
               <p class="subtitle">University of Montana <i>(August 2011-May 2013)</i></p>
             </header>
             <ul class="description">
-              <li>Researched, designed, and implemented EASL (English as an Academic Second Language) courses for undergraduate students with sub-par English proficiency</li>
+              <li>Researched, designed, and implemented my own EASL (English as an Academic Second Language) curriculum for undergraduate students with sub-par English proficiency</li>
               <li>Received excellent end-of-course evaluations from all classes</li>
               <li>Aided students in attaining both linguistic proficiency and cultural familiarity</li>
             </ul>
@@ -185,24 +240,24 @@
               <p class="subtitle">App Academy <i>(Spring 2015)</i></p>
             </header>
             <ul class="description">
-              <li>Immersive software development course with focus on full-stack web development, DRY coding, test- and behavior-driven development, and agile methodologies.</li>
+              <li>Immersive software development course with focus on full-stack web development, DRY coding, test- and behavior-driven development, and agile methodologies</li>
               <li>Strong emphasis on code quality and design patterns, engrained  through pair-programming increasingly larger projects.</li>
-              <li>Acceptance rate around 5%.</li>
+              <li>Acceptance rate &lt;5%</li>
             </ul>
           </article>
           <hr class="hr2">
 
           <article>
             <header>
-              <p class="title"><b>PhD Linguistics</b> (unfinished)</p>
+              <p class="title"><b>PhD Linguistics</b></p>
               <p class="subtitle">
                 University of California, Santa Barbara <i>(2013-2014)</i>
               </p>
             </header>
             <ul class="description">
-              <li>Investigated issues related to language complexity using Python's NLTK module to parse and analyze linguistic data and the matplotlib library to visualize the results</li>
-              <li>Analyzed linguistic data within an Information Theoretical framework using Python to perform entropy calculations (<a href=https://www.academia.edu/12162974/Quantifying_syntactic_complexity>link to working paper</a>)</li>
-              <li>Used R to explore corpus linguistic approaches on a variety of topics and provide statistical analyses of results</li>
+              <li>Investigated issues related to language complexity within an Information Theoretical framework using Python and R to parse and analyze linguistic data and visualize the results (<a href=https://www.academia.edu/12162974/Quantifying_syntactic_complexity>link to working paper</a>)</li>
+              <li>Co-founding member of <a href=http://digitallinguistics.github.io>Wugbot</a>, an extracurricular student group devoted to exploring computational approaches to solving linguistic problems</li>
+              <li>Left program in good academic standing to pursue web development</li>
             </ul>
           </article>
           <hr class="hr2">
@@ -237,10 +292,10 @@
     </section>
   </div>
 
-  <script src=js/main.js></script>
   <script type=text/javascript>
-    SSdotCom.animatePage();
+    (function () {
+      new SSdotCom();
+    })();
   </script>
-
 </body>
 </html>
