@@ -10,7 +10,7 @@
     type='text/css'>
   <link rel="stylesheet" type='text/css' href="style/normalize.css">
   <link rel="stylesheet" type='text/css' href="style/main.css">
-  <!-- <link rel="stylesheet" type="text/css" href="print.css" media="print"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="style/print.css" media="print"> -->
 
 
   <title>Scott Schupbach - Web Developer</title>
@@ -23,7 +23,7 @@
 
   <div class=body>
     <header class="top clearfix">
-      <h1><a href=#>Scott Schupbach</a></h1>
+      <h1 id=name onmouseover="SSdotCom.dropDownNav()">Scott Schupbach</h1>
       <ul class="inline right links">
         <li class=left title="Email">
           <a href=mailto:ssschupbach@gmail.com>
@@ -45,6 +45,12 @@
             <img src="imgs/icons/academia.png">
           </a>
         </li>
+      </ul>
+      <ul class="page-nav links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Work History</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
     </header>
 
@@ -71,39 +77,6 @@
         <section class="clearfix projects" id=projects>
           <h1>Projects</h1>
           <hr class=hr1>
-          <article class=project>
-            <header class="project-header">
-              <p class=title>
-                <b>
-                  <a href=http://puddlejumper.space target=_blank>
-                    PuddleJumper
-                  </a>
-                  <a href=https://github.com/scottyschup/finalproject target=_blank>
-                    <img src=imgs/icons/git2.png>
-                  </a>
-                  <a href=http://puddlejumper.space target=_blank>
-                    <img src=imgs/icons/puddlejumper.png>
-                  </a>
-                </b>
-                <i>Rails, Backbone
-                  <span class=print-only>
-                    (http://puddlejumper.space)
-                  </span>
-                </i>
-              </p>
-              <p class=subtitle>
-                A kayak.com clone for galactic travel via
-                <a href=http://en.wikipedia.org/wiki/Stargate_(device)>Stargate</a>.
-              </p>
-            </header>
-            <ul>
-              <li>Wrote backend search service to parse JSON-formatted search parameters and perform database queries</li>
-              <li>Utilized local storage to store previous search parameters for later reuse</li>
-              <li>Used rails' "accepts-nested-attributes-for" method to find or create multiple travelers with a single AJAX request</li>
-              <li>Implemented database-populated type-ahead for departure and origin inputs</li>
-            </ul>
-          </article>
-          <hr class=hr2>
 
           <article class=project>
             <header class="project-header">
@@ -132,10 +105,48 @@
             </header>
             <ul>
               <li>Feautures variable difficulty levels and game durations</li>
-              <li>Provided a catalyst for exploring more complex aspects of HTML5 Canvas, specifically image rotation</li>
-              <li>Wrote key handler to allow multiple simultaneous key events</li>
+              <li>Provided a catalyst for exploring some of the less intuitive aspects of HTML5 Canvas (e.g. image rotation)</li>
+              <li>Wrote custom <a href=https://github.com/scottyschup/asteroidassault/blob/gh-pages/lib/keyMonkey.js target=_blank>key handler</a> to process multiple simultaneous key events</li>
             </ul>
           </article>
+
+          <hr class=hr2>
+
+          <article class=project>
+            <header class="project-header">
+              <p class=title>
+                <b>
+                  <a href=http://puddlejumper.space target=_blank>
+                    PuddleJumper
+                  </a>
+                  <a href=https://github.com/scottyschup/finalproject target=_blank>
+                    <img src=imgs/icons/git2.png>
+                  </a>
+                  <a href=http://puddlejumper.space target=_blank>
+                    <img src=imgs/icons/puddlejumper.png>
+                  </a>
+                </b>
+                <i>Rails, Backbone
+                  <span class=print-only>
+                    (http://puddlejumper.space)
+                  </span>
+                </i>
+              </p>
+              <p class=subtitle>
+                A kayak.com clone for galactic travel via
+                <a href=http://en.wikipedia.org/wiki/Stargate_(device)>
+                  Stargate
+                </a>.
+              </p>
+            </header>
+            <ul>
+              <li>Wrote backend <a href="https://github.com/scottyschup/finalproject/blob/master/app/services/trip_search.rb">search service</a> to parse JSON-formatted search parameters and perform database queries</li>
+              <li>Utilized local storage to store previous search parameters for later reuse</li>
+              <li>Used rails' "accepts-nested-attributes-for" method in conjunction with find_or_initialize to <a href="https://github.com/scottyschup/finalproject/blob/master/app/models/itinerary.rb">add both new and existing travelers</a> to a new itinwith a single AJAX request</li>
+              <li>Implemented database-populated type-ahead for departure and origin inputs</li>
+            </ul>
+          </article>
+          <!--
           <hr class=hr2>
 
           <article class=project>
@@ -163,13 +174,13 @@
               </p>
             </header>
             <ul>
-              <li>Made entirely with vanilla JavaScript</li>
-              <li>Offers multiple image sets for varied game play</li>
+              <li>Made entirely with Vanilla JavaScript</li>
+              <li></li>
             </ul>
-          </article>
+          </article> -->
         </section>
 
-        <section class="clearfix skills">
+        <section class="clearfix" id=skills>
           <h1>Skills</h1>
           <hr class="hr1">
           <ul class="clearfix skills">
@@ -187,7 +198,7 @@
           </ul>
         </section>
 
-        <section class="clearfix experience">
+        <section class="clearfix" id=experience>
           <h1>Work History</h1>
           <hr class="hr1">
           <article>
@@ -229,7 +240,7 @@
           </article>
         </section>
 
-        <section class="clearfix education">
+        <section class="clearfix" id=education>
           <h1>Education</h1>
           <hr class="hr1">
 
@@ -241,14 +252,14 @@
             <ul class="description">
               <li>Immersive software development course with focus on full-stack web development, DRY coding, test- and behavior-driven development, and agile methodologies</li>
               <li>Strong emphasis on code quality and design patterns, engrained  through pair-programming increasingly larger projects.</li>
-              <li>Acceptance rate &lt;5%</li>
+              <li>Acceptance rate: less than 5%</li>
             </ul>
           </article>
           <hr class="hr2">
 
           <article>
             <header>
-              <p class="title"><b>PhD Linguistics</b></p>
+              <p class="title"><b>Coursework toward a PhD Linguistics</b></p>
               <p class="subtitle">
                 University of California, Santa Barbara <i>(2013-2014)</i>
               </p>

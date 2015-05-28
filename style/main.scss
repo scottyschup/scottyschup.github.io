@@ -26,7 +26,7 @@ body {
 
 .background {
   background-image: url('../imgs/clean-code.jpg');
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   position: fixed;
   right: 0;
@@ -38,7 +38,6 @@ body {
 .body {
   background-color: rgba(75, 75, 75, .7);
   left: 0;
-  padding-bottom: 0px;
   position: absolute;
   right: 0;
   top: 0;
@@ -50,14 +49,16 @@ body {
 
 .main {
   width: 50%;
+  min-width: 570px;
   font-family: 'Alegreya Sans', sans-serif;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 
 .top {
   background-color: $greenish;
   border-radius: 0;
   color: $light;
+  min-width: 601px;
   padding: 0 20px 5px 10px;
   position: fixed;
   top: 0;
@@ -111,6 +112,17 @@ p {
   height: 40px;
   margin: 0 0 0 7px;
   transition: height .2s;
+}
+
+.page-nav {
+  left: 0;
+  position: absolute;
+  top: -200px;
+  transition: top 1s ease;
+}
+
+.page-nav:hover {
+  top: 100px;
 }
 
 .title img {
@@ -180,7 +192,7 @@ hgroup.title {
   /* box-shadow: 0 0 15px $bluish; */
   margin: 40px auto;
   padding: 15px;
-  width: 100%;
+  width: calc(100% - 30px);
 }
 
 .main > section > *:not(img, .contact) {
@@ -199,7 +211,7 @@ hgroup.title {
 
 .skills {
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
 }
 
 .skills li {

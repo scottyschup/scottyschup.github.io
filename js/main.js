@@ -33,4 +33,8 @@ $(function () {
   SSdotCom.narrowGap = function ($el) {
 
   };
+
+  // SSdotCom.dropDownNav = function () {
+  //   $(".page-nav").css("top", "100px");
+  // }
 }());
