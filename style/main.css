@@ -16,12 +16,14 @@ body {
   width: 100%; }
 
 .background {
-  background-image: url("../imgs/clean-code.jpg");
+  background: url("../imgs/clean-code.jpg") repeat-y;
   bottom: 0px;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
+  -webkit-transition: -webkit-transform .1s;
+  -o-transition: transform .1s;
   transition: transform .1s;
   z-index: -9999; }
 
@@ -154,7 +156,6 @@ hgroup.title {
   clear: both;
   border: none;
   background-color: rgba(140, 175, 210, 0.85);
-  /* box-shadow: 0 0 15px $bluish; */
   margin: 40px auto;
   padding: 15px;
   width: calc(100% - 30px); }
