@@ -68,6 +68,9 @@ a {
 a:hover {
   color: #777; }
 
+a.small {
+  font-size: 14px; }
+
 h1, h2, h3, h4 {
   color: #eee;
   font-family: 'Amaranth', sans-serif;

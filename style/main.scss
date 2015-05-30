@@ -85,6 +85,10 @@ a:hover {
   color: $medium;
 }
 
+a.small {
+  font-size: 14px;
+}
+
 h1, h2, h3, h4 {
   color: $light;
   font-family: 'Amaranth', sans-serif;
