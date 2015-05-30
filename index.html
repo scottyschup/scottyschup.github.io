@@ -142,7 +142,7 @@
             <ul>
               <li>Wrote backend <a href="https://github.com/scottyschup/finalproject/blob/master/app/services/trip_search.rb">search service</a> to parse JSON-formatted search parameters and perform database queries</li>
               <li>Utilized local storage to store previous search parameters for later reuse</li>
-              <li>Used rails' "accepts-nested-attributes-for" method in conjunction with find_or_initialize to <a href="https://github.com/scottyschup/finalproject/blob/master/app/models/itinerary.rb">add both new and existing travelers</a> to a new itinwith a single AJAX request</li>
+              <li>Used rails' <code>accepts-nested-attributes-for</code> method in conjunction with <code>find_or_initialize</code> to <a href="https://github.com/scottyschup/finalproject/blob/master/app/models/itinerary.rb">add both new and existing travelers</a> to a new itinwith a single AJAX request</li>
               <li>Implemented database-populated type-ahead for departure and origin inputs</li>
             </ul>
           </article>
@@ -306,6 +306,16 @@
     (function () {
       new SSdotCom();
     })();
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63570520-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>
