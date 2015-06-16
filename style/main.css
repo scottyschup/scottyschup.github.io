@@ -22,9 +22,9 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  -webkit-transition: -webkit-transform .1s;
-  -o-transition: transform .1s;
-  transition: transform .1s;
+  -webkit-transition: -webkit-transform 0.1s;
+  -o-transition: transform 0.1s;
+  transition: transform 0.1s;
   z-index: -9999; }
 
 .body {
@@ -158,7 +158,7 @@ hgroup.title {
 .sections > section {
   clear: both;
   border: none;
-  background-color: rgba(140, 175, 210, 0.85);
+  background-color: rgba(170, 200, 250, 0.6);
   margin: 40px auto;
   padding: 15px;
   width: calc(100% - 30px); }

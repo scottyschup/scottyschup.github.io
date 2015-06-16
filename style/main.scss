@@ -2,7 +2,7 @@ $light: #eee;
 $medium: #777;
 $dark: #222;
 $greenish: #7aa;
-$bluish: rgba(140, 175, 210, 0.85);
+$bluish: rgba(170, 200, 250, 0.6);
 
 .print-only {
   display: none;
@@ -31,9 +31,9 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  -webkit-transition: -webkit-transform .1s;
-  -o-transition: transform .1s;
-  transition: transform .1s;
+  -webkit-transition: -webkit-transform 0.1s;
+  -o-transition: transform 0.1s;
+  transition: transform 0.1s;
   z-index: -9999;
 }
 
