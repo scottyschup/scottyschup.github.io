@@ -1,8 +1,4 @@
 $(function () {
-  if (window.SSdotCom === undefined) {
-    window.SSdotCom = {};
-  }
-
   var SSdotCom = window.SSdotCom = function () {
     this.body = window.document.body;
     this.html = window.document.documentElement;
@@ -23,9 +19,9 @@ $(function () {
   };
 
   SSdotCom.prototype.startParallaxScroll = function () {
-    $(window).scroll(function (event) {
+    $(window).scroll(function () {
       var st = $(this).scrollTop();
-      var yDelta = -st / 3;
+      var yDelta = -st / 5;
       $(".background").css("transform", "translateY(" + yDelta + "px)");
     });
   };
