@@ -10,7 +10,7 @@ $section-color: rgba(135, 160, 200, 0.5); // old section-color: rgba(170, 200, 2
 
 .clearfix:after {
   clear: both;
-  content: " ";
+  content: "";
   display: block;
   visibility: hidden;
 }
