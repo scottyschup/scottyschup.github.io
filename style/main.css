@@ -38,10 +38,12 @@ body {
   border-radius: 7px; }
 
 .main {
-  width: 50%;
-  min-width: 570px;
   font-family: 'Alegreya Sans', sans-serif;
-  margin: 100px auto 0; }
+  font-size: 20px;
+  margin: 100px auto 0;
+  max-width: 850px;
+  min-width: 600px;
+  width: 70%; }
 
 .top {
   background-color: #234;
@@ -180,10 +182,17 @@ hgroup.title {
   padding: 0 0 20px; }
 
 .skills li {
-  display: block;
-  float: left;
-  margin-right: 10px;
-  font-size: 18px;
-  font-weight: 700; }
+  font-weight: 700;
+  list-style: none; }
+  .skills li .sidenote {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic; }
+
+.tri-column {
+  width: 33%;
+  float: left; }
+  .tri-column ul {
+    width: 90%; }
 
 /*# sourceMappingURL=main.css.map */

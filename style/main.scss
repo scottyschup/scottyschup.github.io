@@ -50,10 +50,12 @@ body {
 }
 
 .main {
-  width: 50%;
-  min-width: 570px;
   font-family: 'Alegreya Sans', sans-serif;
+  font-size: 20px;
   margin: 100px auto 0;
+  max-width: 850px;
+  min-width: 600px;
+  width: 70%;
 }
 
 .top {
@@ -221,9 +223,21 @@ hgroup.title {
 }
 
 .skills li {
-  display: block;
-  float: left;
-  margin-right: 10px;
-  font-size: 18px;
+  // display: block;
+  // float: left;
   font-weight: 700;
+  list-style: none;
+  .sidenote {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.tri-column {
+  width: 33%;
+  float: left;
+  ul {
+    width: 90%;
+  }
 }
