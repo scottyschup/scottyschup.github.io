@@ -1,3 +1,3 @@
-# scottyschup.github.io
+# scottschupbach.com
 
 My portfolio/resume
