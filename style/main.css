@@ -195,4 +195,8 @@ hgroup.title {
   .tri-column ul {
     width: 90%; }
 
+.white-bkgd {
+  padding: 3px;
+  background-color: white; }
+
 /*# sourceMappingURL=main.css.map */
