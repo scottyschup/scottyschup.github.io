@@ -57,12 +57,12 @@
             <h2>Software Engineer</h2>
             <h3>Full-stack, frontend</h3>
             <p>Chicago</p>
-            <p>email:
+            <p class="small">email:
               <a href="mailto:ssschupbach@gmail.com">
                 ssschupbach@gmail.com
               </a>
             </p>
-            <p>phone:
+            <p class="small">phone:
               <a href="tel:15126387024">
                 (512) 638-7024
               </a>
@@ -73,61 +73,75 @@
               </a>
             </p>
           </hgroup>
+
         </section>
 
         <section class="clearfix" id="experience">
-          <h1>Work History</h1>
+          <h2>Work History</h2>
           <hr class="hr1">
+
           <article>
-            <header>
-              <p class="title"><b>Associate Engineer, Global Products</b></p>
-              <p class="subtitle"><a href="http://asperasoft.com/">Avant</a> <i>(July 2017-present)</i></p>
-            </header>
+            <div>
+              <p class="title">Software Engineer - Enablement Team Lead</p>
+              <p class="subtitle">
+                <a href="https://amount.com">Amount</a>;
+                split from
+                <a href="https://avant.com">Avant</a>
+                in 2019
+                <i>(July 2017-present)</i></p>
+            </div>
             <ul class="description">
-              <li>Aided in refactoring core client-facing app for multi-tenant LaaS (lending-as-a-service) usage</li>
-              <li>Contributed to moving the core app from Bootstrap to custom internal styles</li>
+              <li>Overhauled large portions of AngularJS app to improve platform scalability and stability</li>
+              <li>Transitioned core app from Bootstrap to internal CSS library and custom AngularJS components</li>
+              <li>Created road map for migration of core app from AngularJS to React/Typescript/GraphQL</li>
+              <li>Implemented Angular to React proof of concept; obtained buy-in from core Frontend leadership</li>
+              <li>Brought all customer- and business-facing UIs into WCAG compliance (currently in-progress)</li>
             </ul>
           </article>
+
           <hr class="hr2">
 
           <article>
-            <header>
-              <p class="title"><b>Sr. Software Engineer and Front End Lead, Analytics Platform</b></p>
+            <div>
+              <p class="title">Sr. Software Engineer and Front End Lead, Analytics Platform</p>
               <p class="subtitle"><a href="http://asperasoft.com/">Aspera, an IBM Company</a> <i>(July 2015-July 2017)</i></p>
-            </header>
+            </div>
             <ul class="description">
               <li>Architected a new analytics platform consisting of an Angular/D3 user interface, a Go/Glow big data processing component, an autoscaling Redis cluster, and a Rails API server</li>
               <li>Designed and implemented the Rails API server that feeds the Angular front end, queues background jobs for the Go back end, and utilizes a custom ORM and query language to retrieve schematized data stored in Redis</li>
-              <li>Built all Angular modules pertaining to layout and basic interaction in UI, guided by a desire for a clean and pleasant UX</li>
+              <li>Built all Angular modules pertaining to layout, site navigation, and basic UI, guided by a desire for an intuitive and aesthetically-pleasing UX</li>
               <li>Led the office in Legos displayed on desk and decorations put up at Christmastime</li>
             </ul>
           </article>
+
           <hr class="hr2">
 
           <article>
-            <header>
-              <p class="title"><b>Owner, Web Developer</b></p>
+            <div>
+              <p class="title">Owner, Web Developer</p>
               <p class="subtitle">Denali Adventure Tours <i>(Summers 2010-2015)</i></p>
-            </header>
+            </div>
             <ul class="description">
               <li>Built tour reservation system with PHP and MySQL, including sales report generation and dashboard, as well as a user-facing tour information page</li>
               <li>Automated online reservations to decrease daily workload and increase off-season sales</li>
             </ul>
           </article>
+
           <hr class="hr2">
 
           <article>
-            <header>
-              <p class="title"><b>Teaching Assistant in Linguistics and ESL</b></p>
+            <div>
+              <p class="title">Teaching Assistant in Linguistics and ESL</p>
               <p class="subtitle">University of California, Santa Barbara <i>(September 2013-December 2014)</i></p>
               <p class="subtitle">University of Montana <i>(August 2011-May 2013)</i></p>
-            </header>
+            </div>
             <ul class="description">
               <li>Led 30 to 60 students each quarter/semester in in-depth discussion and practical application of course material</li>
               <li>Researched, designed, and implemented curricula for four EASL (English as an Academic Second Language) courses for undergraduate international students with sub-par English proficiency</li>
               <li>Received excellent end-of-course evaluations from all classes</li>
             </ul>
           </article>
+
         </section>
 
         <section class="clearfix projects" id="projects">
@@ -135,19 +149,19 @@
           <hr class="hr1">
 
           <article class="project">
-            <div class="project-div">
+            <div>
               <p class="title">
-                <b>
-                  <a href="http://scottschupbach.com/planetarydefense">
-                    Stargate: Planetary Defense
-                  </a>
-                  <a href="https://github.com/scottyschup/planetarydefense">
-                    <img src="imgs/icons/git.png">
-                  </a>
-                  <a href="http://scottschupbach.com/planetarydefense">
-                    <img src="imgs/icons/asteroid.gif">
-                  </a>
-                </b>
+                <a href="http://scottschupbach.com/planetarydefense">
+                  Stargate: Planetary Defense
+                </a>
+                <a href="https://github.com/scottyschup/planetarydefense">
+                  <img src="imgs/icons/git.png">
+                </a>
+                <a href="http://scottschupbach.com/planetarydefense">
+                  <img src="imgs/icons/asteroid.gif">
+                </a>
+              </p>
+              <p>
                 <i>JavaScript, HTML5</i>
               </p>
               <p class="subtitle">
@@ -165,20 +179,21 @@
           <hr class="hr2">
 
           <article class="project">
-            <div class="project-div">
+            <div>
               <p class="title">
-                <b>
-                  <a href="http://scottschupbach.com/parallax-scroll">
-                    Parallax Scroll
-                  </a>
-                  <a href="https://github.com/scottyschup/parallax-scroll">
-                    <img src="imgs/icons/git.png">
-                  </a>
-                  <a href="http://scottschupbach.com/parallax-scroll">
-                    <img src="imgs/icons/jqps_logo.png">
-                  </a>
-                </b>
-                <i>jQuery plugin</i>
+                <a href="http://scottschupbach.com/parallax-scroll">
+                  Parallax Scroll
+                </a>
+                <a href="https://github.com/scottyschup/parallax-scroll">
+                  <img src="imgs/icons/git.png">
+                </a>
+                <a href="http://scottschupbach.com/parallax-scroll">
+                  <img src="imgs/icons/jqps_logo.png">
+                </a>
+              </p>
+              <p>
+                <i>jQuery plugin (used on this page)</i>
+              </p>
               </p>
               <p class="subtitle">
                 Creates a two-tiered scroll with html content and a background image.
@@ -192,20 +207,70 @@
           <hr class="hr2">
 
           <article class="project">
-            <div class="project-div">
+            <div>
               <p class="title">
-                <b>
-                  <a href="http://www.scottschupbach.com/grid-monkey/">
-                    Grid Monkey
-                  </a>
-                  <a href="https://github.com/scottyschup/grid-monkey">
-                    <img src="imgs/icons/git.png">
-                  </a>
-                  <a href="http://scottschupbach.com/grid-monkey">
-                    <img src="imgs/icons/gm.png">
-                  </a>
-                </b>
+                <a href="https://github.com/scottyschup/translator-missing-in">
+                  Translator Missing In (work in progress)
+                </a>
+                <a href="https://github.com/scottyschup/translator-missing-in">
+                  <img src="imgs/icons/git.png">
+                </a>
+              </p>
+              <p>
+                <i>Ruby, GoogleTranslate API, Chatterbot</i>
+              </p>
+              </p>
+              <p class="subtitle">It's like a bunch of bad translators playing the game Telephone</p>
+            </div>
+            <ul>
+              <li>Wrapped Google Translate API in stand-alone Ruby module adding methods for creating translation chains</li>
+              <li>Next steps include finishing the Twitter bot to listen for tweets and respond with the result of processing the original message</li>
+            </ul>
+          </article>
+
+          <hr class="hr2">
+
+          <article class="project">
+            <div>
+              <p class="title">
+                <a href="https://github.com/scottyschup/treeify">
+                  Treeify (work in progress)
+                </a>
+                <a href="https://github.com/scottyschup/treeify">
+                  <img src="imgs/icons/git.png">
+                </a>
+              </p>
+              <p>
+                <i>Ruby, HTML, CSS, JavaScript</i>
+              </p>
+              </p>
+              <p class="subtitle">Create an interactive, recursive index for easy exploration of any directory</p>
+            </div>
+            <ul>
+              <li>Written in plain Ruby with a simple CLI</li>
+              <li>App builds dynamic index pages with both a tree-view and a document-view for interacting with the directory contents</li>
+              <li>Next steps include adding a few smaller features and bug fixes, refactoring, and packaging as a gem</li>
+            </ul>
+          </article>
+
+          <hr class="hr2">
+
+          <article class="project">
+            <div>
+              <p class="title">
+                <a href="http://www.scottschupbach.com/grid-monkey/">
+                  Grid Monkey
+                </a>
+                <a href="https://github.com/scottyschup/grid-monkey">
+                  <img src="imgs/icons/git.png">
+                </a>
+                <a href="http://scottschupbach.com/grid-monkey">
+                  <img src="imgs/icons/gm.png">
+                </a>
+              </p>
+              <p>
                 <i>CSS/jQuery widget</i>
+              </p>
               </p>
               <p class="subtitle">
                 Creates a nested grid structure for focusing DOM elements - originally designed for use in an analytics platform GUI
@@ -217,141 +282,15 @@
             </ul>
           </article>
 
-<<<<<<< HEAD
-          <hr class="hr2">
-
-          <article class="project">
-            <header class="project-header">
-              <p class="title">
-                <b>
-                  <a href="http://scottschupbach.com/parallax-scroll">
-                    Parallax Scroll
-                  </a>
-                  <a href="https://github.com/scottyschup/parallax-scroll">
-                    <img src="imgs/icons/git2.png">
-                  </a>
-                  <a href="http://scottschupbach.com/parallax-scroll">
-                    <img src="imgs/icons/jqps_logo.png">
-                  </a>
-                </b>
-                <i>jQuery plugin (used on this page)</i>
-              </p>
-              <p class="subtitle">
-                Creates a two-tiered scroll with html content and a background image.
-              </p>
-            </header>
-            <ul>
-              <li>A straightforward jQuery plugin with a simple yet flexible API</li>
-            </ul>
-          </article>
-
-          <hr class="hr2">
-
-          <article class="project">
-            <header class="project-header">
-              <p class="title">
-                <b>Translator Missing In (work in progress)
-                  <a href="https://github.com/scottyschup/translator-missing-in">
-                    <img src="imgs/icons/git2.png"></a>
-                  </b>
-                  <i>Ruby, GoogleTranslate API, Chatterbot</i>
-                </p>
-                <p class="subtitle">It's like a bunch of bad translators playing the game Telephone</p>
-              </header>
-              <ul>
-                <li>Wrapped Google Translate API in stand-alone Ruby module adding methods for creating translation chains</li>
-                <li>Next steps include finishing the Twitter bot to listen for tweets and respond with the result of processing the original message</li>
-              </ul>
-            </article>
-
-          <hr class="hr2">
-
-          <article class="project">
-            <header class="project-header">
-              <p class="title">
-                <b>Treeify (work in progress)
-                  <a href="https://github.com/scottyschup/treeify">
-                    <img src="imgs/icons/git2.png"></a>
-                  </b>
-                  <i>Ruby, HTML, CSS, JavaScript</i>
-                </p>
-                <p class="subtitle">Create an interactive, recursive index for easy exploration of any directory</p>
-              </header>
-              <ul>
-                <li>Written in plain Ruby with a simple CLI</li>
-                <li>App builds dynamic index pages with both a tree-view and a document-view for interacting with the directory contents</li>
-                <li>Next steps include adding a few smaller features and bug fixes, refactoring, and packaging as a gem</li>
-              </ul>
-            </article>
-=======
         </section>
 
-        <section class="clearfix" id="experience">
-          <h2>Work History</h2>
-          <hr class="hr1">
-          <article>
-            <div>
-              <p class="title"><b>Software Engineer - Enablement Team Lead</b></p>
-              <p class="subtitle">Amount (formerly part of Avant, split in 2019) <i>(July 2017-present)</i></p>
-            </div>
-            <ul class="description">
-              <li>Overhauled large portions of AngularJS app to improve platform scalability and stability</li>
-              <li>Transitioned core app from Bootstrap to internal CSS library and custom AngularJS components</li>
-              <li>Created road map for migration of core app from AngularJS to React/Typescript/GraphQL</li>
-              <li>Implemented Angular to React proof of concept; obtained buy-in from core Frontend leadership</li>
-              <li>Brought all customer- and business-facing UIs into WCAG compliance (currently in-progress)</li>
-            </ul>
-          </article>
-          <hr class="hr2">
-
-          <article>
-            <div>
-              <p class="title"><b>Software Engineer - Analytics Project Team Lead</b></p>
-              <p class="subtitle">Aspera, an IBM Company <i>(July 2015-July 2017)</i></p>
-            </div>
-            <ul class="description">
-              <li>Architected a new analytics platform consisting of an Angular/D3 user interface, a Scala/Spark big data processing app, an autoscaling Redis cluster, and a Rails API server</li>
-              <li>Developed the Rails API server which serves the Angular front end, queues jobs for the Scala back end, and retrieves processed data from the Redis cluster</li>
-              <li>Built majority of the Angular modules pertaining to layout, site navigation, and basic UI, guided by a desire for an intuitive and aesthetically pleasing UX</li>
-              <li>Led the office in Legos displayed on desk and decorations put up at Christmastime</li>
-            </ul>
-          </article>
-          <hr class="hr2">
-
-          <article>
-            <div>
-              <p class="title"><b>Owner, Web Developer</b></p>
-              <p class="subtitle">Denali Adventure Tours <i>(Summers 2010-2015)</i></p>
-            </div>
-            <ul class="description">
-              <li>Built tour reservation system with PHP and MySQL, including sales report generation and dashboard, as well as a user-facing tour information page</li>
-              <li>Automated online reservations to decrease daily workload and increase off-season sales</li>
-            </ul>
-          </article>
-          <hr class="hr2">
-
-          <article>
-            <div>
-              <p class="title"><b>Teaching Assistant in Linguistics and ESL</b></p>
-              <p class="subtitle">University of California, Santa Barbara <i>(September 2013-December 2014)</i></p>
-              <p class="subtitle">University of Montana <i>(August 2011-May 2013)</i></p>
-            </div>
-            <ul class="description">
-              <li>Led 30 to 60 students each quarter in in-depth discussion and practical application of linguistic material</li>
-              <li>Researched, designed, and implemented curricula for four EASL (English as an Academic Second Language) courses for undergraduate international students with sub-par English proficiency</li>
-              <li>Received excellent end-of-course evaluations from all classes</li>
-            </ul>
-          </article>
->>>>>>> 8a2f9ad... Update work, volunteer info; improve mobile view; remove unused imgs
-        </section>
-
-        <section class="clearfix" id="experience">
+        <section class="clearfix" id="volunteer">
           <h2>Volunteer Work</h2>
           <hr class="hr1">
           <article>
             <div>
-              <p class="title"><b>Tech volunteer</b></p>
-              <p class="subtitle">Midwest Access Coalition <i>(January 2018-present)</i></p>
+              <p class="title">Midwest Access Coalition</p>
+              <p class="subtitle">Tech volunteer <i>(January 2018-present)</i></p>
             </div>
             <ul class="description">
               <li>Added “Quick Exit” and browser history override features to help ensure client privacy and safety</li>
@@ -365,8 +304,11 @@
 
           <article>
             <div>
-              <p class="title"><b>TA, Teacher, Event Organizer, Open-source contributor</b></p>
-              <p class="subtitle">RailsBridge <i>(May 2015-June 2017, January-February 2020)</i></p>
+              <p class="title">RailsBridge</p>
+              <p class="subtitle">
+                TA, Teacher, Event Organizer, Open-source contributor
+                <i>(May 2015-June 2017, January-February 2020)</i>
+              </p>
             </div>
             <ul class="description">
               <li>Wrote algorithm for predicting number of event attendees based on prior attendance</li>
@@ -382,7 +324,8 @@
 
           <article>
             <div>
-              <p class="title"><b>Ruby on Rails Bootcamp</b>
+              <p class="title">
+                Ruby on Rails Bootcamp
                 <a href="https://www.appacademy.io">
                   <img src="imgs/appacademy.jpg" alt="App Academy Logo">
                 </a>
@@ -395,11 +338,13 @@
               <li>Highly selective with consistently strong outcomes for students who complete the program</li>
             </ul>
           </article>
+
           <hr class="hr2">
 
           <article>
             <div>
-              <p class="title"><b>Coursework toward a PhD Linguistics</b>
+              <p class="title">
+                Coursework toward a PhD Linguistics
                 <a href="http://www.ucsb.edu/">
                   <img class="white-bkgd" src="imgs/ucsb.png" alt="UC Santa Barbara Logo">
                 </a>
@@ -414,11 +359,13 @@
               <li>Left program to pursue a career in web development</li>
             </ul>
           </article>
+
           <hr class="hr2">
 
           <article>
             <div>
-              <p class="title"><b>MA Linguistics</b> (GPA 4.0)
+              <p class="title">
+                MA Linguistics <span class="sidenote">(GPA 4.0)</span>
                 <a href="http://www.umt.edu/">
                   <img src="imgs/umt.jpg" alt="University of Montana">
                 </a>
@@ -432,11 +379,13 @@
               <li>Earned student research conference Award for Outstanding Graduate Student Performance</li>
             </ul>
           </article>
+
           <hr class="hr2">
 
           <article>
             <div>
-              <p class="title"><b>BA Classics</b> (GPA 3.97)
+              <p class="title">
+                BA Classics <span class="sidenote">(GPA 3.97)</span>
                 <a href="https://www.gvsu.edu/">
                   <img class="white-bkgd" src="imgs/gvsu.png" alt="Grand Valley State University logo">
                 </a>
@@ -452,10 +401,11 @@
         </section>
 
         <section class="clearfix" id="skills">
-          <h1>Relevant Skills</h1>
+          <h2>Relevant Skills</h2>
           <hr class="hr1">
-          <div class="tri-column left">
-            <h2>Advanced</h2>
+          <div class="two-column left">
+            <h3>Fluency</h3>
+            <hr class="hr2">
             <ul class="clearfix skills tri-column">
               <li>Ruby <span class="sidenote">(Rails)</span></li>
               <li>JavaScript <span class="sidenote">(AngularJS, jQuery, React, TypeScript, Webpack)</span></li>
@@ -463,11 +413,12 @@
               <li>CSS3 <span class="sidenote">(SASS, Stylus)</span></li>
               <li>SQL <span class="sidenote">(MySQL, PostgreSQL, Sqlite)</span></li>
               <li>Redis</li>
-              <li>git</li>
+              <li>Git</li>
             </ul>
           </div>
-          <div class="tri-column">
-            <h2>Intermediate</h2>
+          <div class="two-column">
+            <h3>Familiarity</h3>
+            <hr class="hr2">
             <ul class="clearfix skills">
               <li>Python</li>
               <li>RSpec</li>
@@ -475,12 +426,7 @@
               <li>Grunt</li>
               <li>Gulp</li>
               <li>Backbone.js</li>
-              <li>Unix shell (bash, zsh)</li>
-            </ul>
-          </div>
-          <div class="tri-column">
-            <h2>Novice</h2>
-            <ul class="clearfix skills">
+              <li>Unix shell <span class="sidenote">(bash, zsh)</span></li>
               <li>R</li>
               <li>PHP</li>
               <li>Docker</li>

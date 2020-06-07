@@ -51,7 +51,7 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 20px;
   margin: 100px auto 0;
-  max-width: 850px;
+  // max-width: 850px;
   min-width: 600px;
   width: 75%;
 }
@@ -86,8 +86,8 @@ a:hover {
   color: $light;
 }
 
-a.small {
-  font-size: 0.9em;
+.small {
+  font-size: 0.7em;
 }
 
 h1, h2, h3, h4 {
@@ -206,13 +206,15 @@ hgroup.title {
   padding-bottom: 10px;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
   margin: 0px;
   font-size: 18px;
 }
 
 .title {
   font-size: 24px;
+  font-weight: 700;
 }
 
 .skills {
@@ -232,8 +234,8 @@ hgroup.title {
   }
 }
 
-.tri-column {
-  width: 33%;
+.two-column {
+  width: 50%;
   float: left;
   ul {
     width: 90%;

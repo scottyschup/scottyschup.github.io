@@ -36,17 +36,11 @@ body {
   border-radius: 7px; }
 
 .main {
-<<<<<<< HEAD
-=======
-  width: 75%;
-  min-width: 600px;
->>>>>>> 8a2f9ad... Update work, volunteer info; improve mobile view; remove unused imgs
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 20px;
   margin: 100px auto 0;
-  max-width: 850px;
   min-width: 600px;
-  width: 70%; }
+  width: 75%; }
 
 .top {
   background-color: #234;
@@ -74,8 +68,8 @@ a {
 a:hover {
   color: #eee; }
 
-a.small {
-  font-size: 0.9em; }
+.small {
+  font-size: 0.7em; }
 
 h1, h2, h3, h4 {
   color: #eee;
@@ -173,12 +167,14 @@ hgroup.title {
   width: 100%;
   padding-bottom: 10px; }
 
-.title, .subtitle {
+.title,
+.subtitle {
   margin: 0px;
   font-size: 18px; }
 
 .title {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 700; }
 
 .skills {
   margin: 0;
@@ -192,10 +188,10 @@ hgroup.title {
     font-weight: 400;
     font-style: italic; }
 
-.tri-column {
-  width: 33%;
+.two-column {
+  width: 50%;
   float: left; }
-  .tri-column ul {
+  .two-column ul {
     width: 90%; }
 
 .white-bkgd {
