@@ -39,9 +39,7 @@ body {
 
 .body {
   background-color: rgba(100, 100, 100, .7);
-  left: 0;
   position: absolute;
-  right: 0;
   top: 0;
 }
 
@@ -55,7 +53,7 @@ body {
   margin: 100px auto 0;
   max-width: 850px;
   min-width: 600px;
-  width: 70%;
+  width: 75%;
 }
 
 .top {
@@ -74,7 +72,7 @@ body {
 .top h1 {
   left: 5px;
   float: left;
-  font-size: 48px;
+  font-size: 2.5em;
 }
 
 a {
@@ -89,13 +87,13 @@ a:hover {
 }
 
 a.small {
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 h1, h2, h3, h4 {
   color: $light;
   font-family: 'Amaranth', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
   margin: 0;
 }
@@ -105,7 +103,7 @@ h3, h4 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 p {
@@ -245,4 +243,25 @@ hgroup.title {
 .white-bkgd {
   padding: 3px;
   background-color: white;
+}
+
+@media only screen and (max-width: 650px) {
+  ul.links {
+    display: none;
+  }
+
+  header {
+    font-size: medium;
+  }
+
+  .main {
+    width: 96%;
+    min-width: 390px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: larger;
+  }
 }
