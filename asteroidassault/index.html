@@ -6,12 +6,37 @@
 </head>
 <body>
   <h1>Oops! I gave you the wrong link!</h1>
-  <p>Really, I just did a little re-branding and changed the name of this project.
-    You'll be redirected momentarily :)</p>
+  <p>
+    Really, I just did a little re-branding and changed the name of this project.
+    You'll be redirected momentarily :)
+  </p>
+  <p>
+    Redirecting in
+    <span id="timer">5</span>
+    seconds...
+  </p>
+  <button onClick="window.location.href = 'http://scottschupbach.com/planetarydefense'">Go now!</button>
+
   <script type=text/javascript>
-    setTimeout(function () {
-      window.location = 'http://scottschupbach.com/planetarydefense'
-    }, 4000)
+    var timerDiv = window.document.getElementById('timer');
+    var secsRemaining = 4;
+
+    setInterval(
+      function () {
+        console.log('interval', secsRemaining);
+        timerDiv.innerHTML = secsRemaining;
+        secsRemaining--;
+      },
+      1000,
+    );
+
+    setTimeout(
+      function () {
+        window.location = 'https://scottschupbach.com/planetarydefense'
+      },
+      5000,
+    );
+
   </script>
 
   <script>
